@@ -14,7 +14,7 @@ output:
 
 ```{r}
 # Path of folder where we are storing our results
-absolute_path <- "~/Docs/gitExample/GitExample/"
+absolute_path <- "~/Code/ResearchPractical2026/Code/"
 ```
 
 ```{r}
@@ -25,7 +25,7 @@ get.multiples1to10 <- function(multiplier){
 }
 
 # display results for parameter value set to 3
-current_value <- 9
+current_value <- 3
 results <- get.multiples1to10(multiplier = current_value)
 
 # Storing our file 
@@ -33,5 +33,7 @@ todays_date <- Sys.Date()
 the_filename <- paste(absolute_path,"multiples1to10--multiplier", current_value, "_",todays_date,".csv", sep="")
 print(the_filename)
 write.csv(results, file = the_filename, row.names = FALSE)
+
+print("New line")
 
 ```
