@@ -34,6 +34,6 @@ the_filename <- paste(absolute_path,"multiples1to10--multiplier", current_value,
 print(the_filename)
 write.csv(results, file = the_filename, row.names = FALSE)
 
-
+print("New line")
 
 ```
